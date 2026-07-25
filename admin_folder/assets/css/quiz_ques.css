@@ -1,0 +1,209 @@
+/* Styling for quizzes and questions Section Block */
+.quizzes-block {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%; /* Full Width */
+    margin: 20px 0; /* Remove Auto Margin to Stretch Fully */
+    text-align: left; /* Align Text to Left */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Title and Description Styling */
+.quizzes-block h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.quizzes-block p {
+    color: white;
+    font-size: 16px;
+}
+
+
+/* General Table quizzes Styling */
+.quizzes-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+
+/* table quizzes start */
+/* Table Header */
+.quizzes-table thead {
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradient Blue */
+    color: white;
+}
+
+.quizzes-table th {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 2px solid #004080;
+    font-weight: bold;
+}
+
+/* Alternating Row Colors */
+.quizzes-table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; /* Light Gray */
+}
+
+.quizzes-table tbody tr:nth-child(even) {
+    background-color: #e9ecef; /* Slightly Darker Gray */
+}
+
+/* Table Rows */
+.quizzes-table tbody tr {
+    transition: background 0.3s ease-in-out;
+}
+
+.quizzes-table td {
+    padding: 12px;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Rounded corners for the first and last row */
+.quizzes-table thead tr:first-child th:first-child {
+    border-top-left-radius: 0px;
+}
+
+.quizzes-table thead tr:first-child th:last-child {
+    border-top-right-radius: 0px;
+}
+
+.quizzes-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 0px;
+}
+
+.quizzes-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 0px;
+}
+
+/* Hover Effect */
+.quizzes-table tbody tr:hover {
+    background: rgba(0, 123, 255, 0.2); /* Soft Blue Glow */
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .quizzes-table {
+        font-size: 14px;
+    }
+
+    .quizzes-table th,
+    .quizzes-table td {
+        padding: 10px;
+    }
+}
+/* table of quizzes ends */
+
+
+
+
+/* "Create Quiz" Button Styling */
+.create-quiz-btn {
+    background-color: white;
+    color: blue;
+    width: 200px;
+    border: 1px solid blue;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.create-quiz-btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Pop-up Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Pop-up Card */
+.popup-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Close Button */
+#close-card-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Form Styling */
+input, textarea, select {
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+/* Question Block Styling */
+.question-block {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Buttons */
+.popup-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.delete-quiz-button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.delete-quiz-button i {
+    font-size: 14px;
+}
+

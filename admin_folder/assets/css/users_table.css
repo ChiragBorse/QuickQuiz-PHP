@@ -1,0 +1,104 @@
+/* Styling for quizzes and questions Section Block */
+.users-block {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%; /* Full Width */
+    margin: 20px 0; /* Remove Auto Margin to Stretch Fully */
+    text-align: left; /* Align Text to Left */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Title and Description Styling */
+.users-block h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.users-block p {
+    color: white;
+    font-size: 16px;
+}
+
+
+/* General Table Styling */
+.users-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Table Header */
+.users-table thead {
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradient Blue */
+    color: white;
+}
+
+.users-table th {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 2px solid #004080;
+    font-weight: bold;
+}
+
+/* Alternating Row Colors */
+.users-table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; /* Light Gray */
+}
+
+.users-table tbody tr:nth-child(even) {
+    background-color: #e9ecef; /* Slightly Darker Gray */
+}
+
+/* Table Rows */
+.users-table tbody tr {
+    transition: background 0.3s ease-in-out;
+}
+
+.users-table td {
+    padding: 12px;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Rounded corners for the first and last row */
+.users-table thead tr:first-child th:first-child {
+    border-top-left-radius: 12px;
+}
+
+.users-table thead tr:first-child th:last-child {
+    border-top-right-radius: 12px;
+}
+
+.users-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+.users-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
+/* Hover Effect */
+.users-table tbody tr:hover {
+    background: rgba(0, 123, 255, 0.2); /* Soft Blue Glow */
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .users-table {
+        font-size: 14px;
+    }
+
+    .users-table th,
+    .users-table td {
+        padding: 10px;
+    }
+}

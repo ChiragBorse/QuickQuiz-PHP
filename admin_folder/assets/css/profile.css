@@ -1,0 +1,72 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Profile Heading Card */
+.profile-card {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif; /* Bold Roman Font */
+}
+
+/* Profile Info Card */
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px; /* Space between profile and info card */
+}
+
+/* Form Styling */
+.info-card .form-label {
+    font-weight: bold;
+}
+
+.info-card input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: blue;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: darkblue;
+}
+
+.btn-danger {
+    background-color: red;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-danger:hover {
+    background-color: darkred;
+}

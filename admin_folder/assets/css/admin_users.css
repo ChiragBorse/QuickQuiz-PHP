@@ -1,0 +1,44 @@
+/* Users Banner */
+.users-banner {
+    background: url("../images/bg_cyber_1.jpg") no-repeat center center;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Users Table */
+.users-container {
+    padding: 20px;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.users-table th {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.users-table td {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Row Hover Effect */
+.users-table tr:hover {
+    background-color: lightgray;
+}
+

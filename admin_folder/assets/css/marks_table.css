@@ -1,0 +1,60 @@
+/* Styling for Marks Section Block */
+.marks-block {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%; /* Full Width */
+    margin: 20px 0; /* Remove Auto Margin to Stretch Fully */
+    text-align: left; /* Align Text to Left */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Title and Description Styling */
+.marks-block h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.marks-block p {
+    color: white;
+    font-size: 16px;
+}
+
+
+/* Styling for Marks Table */
+.marks-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.marks-table thead {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+}
+
+.marks-table th, .marks-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.marks-table tr:hover {
+    background-color: #aeacac;
+}
+
+/* Make table responsive */
+@media (max-width: 768px) {
+    .marks-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

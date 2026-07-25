@@ -1,0 +1,50 @@
+
+    /* Card container styling */
+    .card-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        text-align: center;
+        border: none;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        padding: 20px;
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    /* Gradient Backgrounds */
+    .gradient-blue {
+        background: linear-gradient(135deg, #007bff, #00c6ff);
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .gradient-green {
+        background: linear-gradient(135deg, #28a745, #a0e047);
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .gradient-red {
+        background: linear-gradient(135deg, #dc3545, #ff758c);
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 15px;
+        border-radius: 10px;
+    }

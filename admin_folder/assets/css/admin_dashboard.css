@@ -1,0 +1,152 @@
+/* Importing Poppins Font */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: url('../images/sidebar_bg_3.jpg') no-repeat center center;
+    background-size: cover; /* Ensure it covers the sidebar */
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Sidebar Logo */
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo h3 {
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;
+}
+
+/* Navigation List */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.nav-item {
+    display: block;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Hover Effect - Pop-Out Effect */
+.nav-item:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(5px);
+}
+
+/* Logout Button */
+.logout-btn {
+    color: red;
+    font-weight: bold;
+}
+
+/* Main Content Styling */
+.content {
+    margin-left: 270px;
+    padding: 30px;
+    flex-grow: 1;
+    background-color: #fbfffb;
+}
+
+/* Profile Section */
+.profile-card {
+    background: linear-gradient(135deg, #5fe25d, #3990ec);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    width: 300px;
+}
+
+
+
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+}
+
+
+
+/* Edit Profile Section */
+#edit-profile-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, #ed5c9d, #ec111f);
+    border-radius: 10px;
+    color:white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%; 
+}
+
+#edit-profile-section h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #a5eb77;
+    border: none;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #118011;
+}
+
+.btn-danger {
+    background-color: #ec7d88;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+}
+
